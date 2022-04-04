@@ -1,0 +1,111 @@
+.overlay{
+    background-color: hsl(0, 100%, 74%) ;
+}
+
+.back{
+    height: 100vh;
+    background-image: url("../images/bg-intro-desktop.png");
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    z-index: 455;
+    color: #fff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.back .left h2{
+    font-size: 3.2rem;
+    font-weight: bold;
+}
+
+.back .left p{
+    font-size: 1.2rem;
+    font-weight: 500;
+    margin-top: 1rem;
+}
+
+
+.back .right button{
+    color: #fff;
+    padding: 0.8rem;
+    width: 90%;
+    margin: auto;
+    border: none;
+    font-weight: 100;
+    background-color: hsl(248, 32%, 49%);
+    box-shadow: 0px 8px 0px 0px rgba(0, 0, 0, 0.15);
+    border-radius: 8px !important;
+}
+
+.back .right .btn_first{
+    padding: 0.8rem 3rem !important;
+    font-size: 1rem;
+}
+
+.back .right button span{
+    font-weight: 700;
+}
+
+.back .right .frame{
+    width: 90%;
+    margin: auto;
+    padding: 0.6rem 1rem 0.4rem 1rem;
+    background-color: #fff;
+    box-shadow: 0px 7px 0px 0px rgba(0, 0, 0, 0.2);
+    border-radius: 10px !important;
+}
+
+.back .right .frame .btn_second{
+    background-color: hsl(154, 59%, 51%);
+    width: 100%;
+    font-size: 1rem;
+    font-weight: 600;
+    box-shadow: 0px 1px 1px 1px rgba(0, 0, 0, 0.4);
+}
+
+form-control.is-invalid, .was-validated .form-control:invalid{
+    background-image: url("../images/icon-error.svg") !important;
+}
+
+.back .right .frame input{
+    padding: 1.2rem;
+}
+
+.back .right .frame ::placeholder{
+    color: hsl(249, 10%, 26%);
+    font-weight: 500;
+}
+
+.back .right .frame p{
+    color: hsl(246, 25%, 77%);
+    font-size: 0.75rem;
+    text-align: center;
+    margin: auto;
+    padding-top: 1rem;
+    padding-bottom: 1rem;
+}
+
+.back .right .frame span{
+    color: hsl(0, 100%, 74%);
+    font-weight: bold;
+}
+
+@media(max-width:991px){
+    .back{
+        height: auto;
+        padding-bottom: 2.5rem;
+        background-image: url("../images/bg-intro-mobile.png");
+    }
+    .left{
+        padding-left: 1rem;
+    }
+}
+
+@media(max-width:400px){
+    .left{
+        padding-left: 1rem;
+        padding-top: 0rem !important;
+    }
+}
